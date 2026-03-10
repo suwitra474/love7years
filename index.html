@@ -1,50 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ของขวัญ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>7 Years Anniversary</title>
 
 <style>
 body{
-background:#e7c3cc;
+background:linear-gradient(#ffb6c1,#ffe4ec);
 font-family:sans-serif;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
+text-align:center;
+padding-top:120px;
 }
 
-.card{
-background:#e9a7b7;
-padding:40px;
-border-radius:30px;
-text-align:center;
+.box{
+background:white;
+width:80%;
+margin:auto;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+h1{
+color:#ff4f8b;
+}
+
+input{
+padding:12px;
+font-size:18px;
+border-radius:10px;
+border:1px solid #ccc;
+margin-top:10px;
 }
 
 button{
-padding:15px 30px;
-border:none;
-border-radius:20px;
-background:#f79c7c;
+margin-top:20px;
+padding:12px 25px;
 font-size:18px;
+border:none;
+border-radius:12px;
+background:#ff4f8b;
+color:white;
 }
+
 </style>
+
+<script>
+function checkPassword(){
+var pass = document.getElementById("pass").value;
+
+if(pass == "0707"){
+window.location.href="menu.html";
+}else{
+alert("รหัสผิดนะที่รัก ❤️");
+}
+}
+</script>
 
 </head>
 
 <body>
 
-<div class="card">
+<div class="box">
+<h1>Happy 7 Years ❤️</h1>
 
-<h2>มีของขวัญมาส่งให้คนพิเศษ</h2>
+<p>ใส่รหัสวันครบรอบของเรา</p>
 
-<div style="font-size:90px">🎁</div>
+<input type="password" id="pass" placeholder="วันครบรอบ">
 
-<p>ยิ้มก่อนเปิดนะแฟน</p>
+<br>
 
-<button onclick="window.location.href='menu.html'">
-จิ้มตรงนี้คนเก่ง
-</button>
+<button onclick="checkPassword()">เข้าสู่ความทรงจำ</button>
 
 </div>
 
